@@ -19,6 +19,10 @@ app.use(cookieParser())
 
 app.use(router)
 
+app.get('/',(req,res)=>{
+    res.send("hi rk")
+})
+
 app.listen(process.env.PORT, () => {
     console.log('Server listening on port 3000')
 })
