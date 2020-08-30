@@ -20,7 +20,7 @@ app.use(cookieParser())
 app.use(router)
 
 app.get('/',(req,res)=>{
-    res.send("hi prakhar")
+    res.send("hi rkrana")
 })
 
 app.listen(process.env.PORT, () => {
