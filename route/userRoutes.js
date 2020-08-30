@@ -3,11 +3,13 @@ import userControllers from '../Controllers/usercntrl.js'
 import postControllers from '../Controllers/postcntrl.js'
 import cookieParser from 'cookie-parser'
 import cookieHandler from './cookies.js'
-
+import Cors from 'cors';
 
 const Router = express()
 
 Router.use(cookieParser())
+
+Router.use(Cors());
  
 //User SignUp
 Router.post('/userSignUpPost', userControllers.signUpPost)
